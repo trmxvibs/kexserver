@@ -104,12 +104,12 @@ sleep 2
 
 echo -e "\e[1;32m< Create Shortcut for VNC >\e[0m"
 sleep 3
-chmod +x nethunter-kex-passwd
-chmod +x kex-&	
-chmod +x nethunter-kex-stop
-mv nethunter-kex-passwd /usr/bin/
-mv kex-& /usr/bin/
-mv nethunter-kex-stop /usr/bin/
+chmod +x start-kex
+chmod +x stop-kex
+chmod +x kex-passwd
+mv start-kex /usr/bin/
+mv stop-kex /usr/bin/
+mv kex-passwd /usr/bin/
 # 8️⃣ Start the VNC Server
 echo "🚀 Starting VNC Server..."
 sleep 3
@@ -130,10 +130,9 @@ sleep 2
 echo "✅ VNC Server is now running!"
 
 echo -e "\e[1;32m< Shortcut for Vnc >\e[0m"
-echo "nethunter kex passwd ==>>   configure the KeX password (only needed before 1st use)"
-echo "nethunter kex & ==>>   start Kali NetHunter Desktop Experience user sessions"
-echo "nethunter kex passwd ==>>   configure the KeX password (only needed before 1st use)"
-echo "nethunter kex stop ==>>   stop Kali NetHunter Desktop Experience"
+echo "kex-passwd   ==>>   configure the KeX password (only needed before 1st use)"
+echo "start-kex    ==>>   start Kali NetHunter Desktop Experience user sessions"
+echo "stop-kex     ==>>   stop Kali NetHunter Desktop Experience"
 sleep 30
 
 echo -e "\e[1;32m< Thanks to visit us >\e[0m"
