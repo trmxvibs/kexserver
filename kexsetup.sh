@@ -104,12 +104,12 @@ sleep 2
 
 echo -e "\e[1;32m< Create Shortcut for VNC >\e[0m"
 sleep 3
-chmod +x nethunter kex passwd
-chmod +x nethunter kex &	
-chmod +x nethunter kex stop
-mv nethunter kex passwd /usr/bin/
-mv nethunter kex & /usr/bin/
-mv nethunter kex stop /usr/bin/
+chmod +x nethunter-kex-passwd
+chmod +x nethunter-kex-&	
+chmod +x nethunter-kex-stop
+mv nethunter-kex-passwd /usr/bin/
+mv nethunter-kex-& /usr/bin/
+mv nethunter-kex-stop /usr/bin/
 # 8️⃣ Start the VNC Server
 echo "🚀 Starting VNC Server..."
 sleep 3
