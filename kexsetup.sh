@@ -93,6 +93,23 @@ xhost +  # Allow clients to connect
 dbus-launch --exit-with-session startxfce4" > /root/.vnc/xstartup
 chmod +x /root/.vnc/xstartup
 clear
+echo -e "\e[1;32m"
+echo "========================================="
+echo "   🚀 Kali NetHunter TigerVNC Setup "
+echo "========================================="
+echo -e "\e[1;33mAuthor  : Lokesh Kumar"
+echo "YouTube : https://youtube.com/@termuxvibes"
+echo -e "\e[1;32m=========================================\e[0m"
+sleep 2
+
+echo -e "\e[1;32m< Create Shortcut for VNC >\e[0m"
+sleep 3
+chmod +x nethunter kex passwd
+chmod +x nethunter kex &	
+chmod +x nethunter kex stop
+mv nethunter kex passwd /usr/bin/
+mv nethunter kex & /usr/bin/
+mv nethunter kex stop /usr/bin/
 # 8️⃣ Start the VNC Server
 echo "🚀 Starting VNC Server..."
 sleep 3
@@ -111,5 +128,15 @@ echo -e "\e[1;32m=========================================\e[0m"
 sleep 2
 # 9️⃣ Display VNC Connection Info
 echo "✅ VNC Server is now running!"
-echo "📡 Connect using VNC Viewer with: 127.0.0.1:5901"
-echo "🔄 To restart VNC: vncserver -kill :1 && vncserver :1 -geometry 1280x720 -depth 24"
+
+echo -e "\e[1;32m< Shortcut for Vnc >\e[0m"
+echo "nethunter kex passwd ==>>   configure the KeX password (only needed before 1st use)"
+echo "nethunter kex & ==>>   start Kali NetHunter Desktop Experience user sessions"
+echo "nethunter kex passwd ==>>   configure the KeX password (only needed before 1st use)"
+echo "nethunter kex stop ==>>   stop Kali NetHunter Desktop Experience"
+sleep 30
+
+echo -e "\e[1;32m< Thanks to visit us >\e[0m"
+sleep 3
+
+
