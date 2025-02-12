@@ -23,8 +23,12 @@ To use the scripts in this repository, follow these steps:
     ```sh
     cd kexserver
     ```
+3. Make Script Executable :
+```sh
+chmod +x kexsetup.sh
+```
 
-3. Execute the appropriate shell script:
+4. Execute the appropriate shell script:
     ```sh
     ./kexsetup.sh
     ```
